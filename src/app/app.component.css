@@ -86,18 +86,16 @@ header p {
   color: #555;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #e91e63;  /* Rosa fuerte */
-  color: white;
-  margin-top: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
 
 /* Estilos para enlaces */
 a {
   text-decoration: none;
+}
+
+.profile-img {
+  width: 150px; /* Tamaño pequeño */
+  height: 150px; /* Mantenerlo cuadrado */
+  margin-left: 0; /* Asegurarse de que no haya margen izquierdo */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  float: left; /* Alinea la imagen a la izquierda */
 }
