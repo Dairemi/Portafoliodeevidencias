@@ -1,14 +1,103 @@
-button {
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button:hover {
-  background-color: #45a049;
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f1f9;  /* Fondo suave en rosa claro */
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Cabecera */
+header {
+  background-color: #000000;  /* Rosa fuerte */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+
+/* Proyectos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  background-color: #000000;  /* Rosa fuerte */
+  font-size: 1.6em;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.project-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e91e63;  /* Rosa fuerte */
+  color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none;
 }
